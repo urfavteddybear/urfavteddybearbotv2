@@ -13,7 +13,7 @@
 # Why.
 
 The branch of the bot https://buses.rocks
-Usually recived commit & fixes faster.
+Usually recived commit & fixes faster
 
 > https://github.com/torvalds/linux/pull/17
 
