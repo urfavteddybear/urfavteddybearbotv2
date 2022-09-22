@@ -17,29 +17,21 @@ module.exports = {
   // Lavalink server; optional public lavalink -> https://lavalink-list.darrennathanael.com/
   // The default one should work fine.
   nodes: [
+    
     {
-      identifier: "Main 1", //- Used for indentifier in stats commands.
-      host: "176.31.203.24",
-      port: 1907,
-      password: "backuplava",
-      retryAmount: 9999999, //- The amount of times to retry connecting to the node if connection got dropped.
-      retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
-      secure: false, //- Can be either true or false. Only use true if ssl is enabled!
-    },
-    {
-      identifier: "Main 2", //- Used for indentifier in stats commands.
-      host: "141.148.196.197",
+      identifier: "Main", //- Used for indentifier in stats commands.
+      host: "140.238.248.156",
       port: 3000,
-      password: "LavaOnMoon",
+      password: "kdlavalink",
       retryAmount: 9999999, //- The amount of times to retry connecting to the node if connection got dropped.
       retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
       secure: false, //- Can be either true or false. Only use true if ssl is enabled!
     },
     {
       identifier: "Fallback", //- Used for indentifier in stats commands.
-      host: "140.238.248.156",
-      port: 3000,
-      password: "kdlavalink",
+      host: "176.31.203.24",
+      port: 1907,
+      password: "backuplava",
       retryAmount: 9999999, //- The amount of times to retry connecting to the node if connection got dropped.
       retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
       secure: false, //- Can be either true or false. Only use true if ssl is enabled!
