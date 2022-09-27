@@ -29,9 +29,9 @@ module.exports = {
     },
     {
       identifier: "Fallback", //- Used for indentifier in stats commands.
-      host: "176.31.203.24",
-      port: 1907,
-      password: "backuplava",
+      host: "140.238.226.251",
+      port: 3000,
+      password: "lavaserver",
       retryAmount: 9999999, //- The amount of times to retry connecting to the node if connection got dropped.
       retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
       secure: false, //- Can be either true or false. Only use true if ssl is enabled!
