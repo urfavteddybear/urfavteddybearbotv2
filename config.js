@@ -26,6 +26,15 @@ module.exports = {
       retryAmount: 9999999, //- The amount of times to retry connecting to the node if connection got dropped.
       retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
       secure: false, //- Can be either true or false. Only use true if ssl is enabled!
+    },
+    {
+      identifier: "Fallback", //- Used for indentifier in stats commands.
+      host: "176.31.203.21",
+      port: 1859,
+      password: "lavaserver",
+      retryAmount: 9999999, //- The amount of times to retry connecting to the node if connection got dropped.
+      retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
+      secure: false, //- Can be either true or false. Only use true if ssl is enabled!
     }
   ],
   embedColor: "#b72d30", //Color of the embeds, hex supported
