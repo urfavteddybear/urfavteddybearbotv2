@@ -1,6 +1,6 @@
 module.exports = {
 	cmdPerPage: 10, //- Number of commands per page of help command
-	adminId: "529251307253530625", //- Replace UserId with the Discord ID of the admin of the bot
+	adminId: "", //- Replace UserId with the Discord ID of the admin of the bot
 	token: process.env.token || "", //- Bot's Token
 	clientId: process.env.clientId || "", //- ID of the bot
 	clientSecret: process.env.clientSecret || "", //- Client Secret of the bot
@@ -21,17 +21,9 @@ module.exports = {
 	// You need a lavalink server for this bot to work!!!!
 	// Lavalink server; public lavalink -> https://lavalink-list.darrennathanael.com/; create one yourself -> https://darrennathanael.com/post/how-to-lavalink
 	nodes: [
-		{
-			identifier: "Main 1", //- Used for indentifier in stats commands.
-			host: "141.148.196.197",
-			port: 3000,
-			password: "LavaOnMoon",
-			retryAmount: 9999999, //- The amount of times to retry connecting to the node if connection got dropped.
-			retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
-			secure: false, //- Can be either true or false. Only use true if ssl is enabled!
-		  },
+		
 		  {
-			identifier: "Main 2", //- Used for indentifier in stats commands.
+			identifier: "Main", //- Used for indentifier in stats commands.
 			host: "192.95.42.70",
 			port: 25582,
 			password: "lavaserver",
@@ -49,7 +41,7 @@ module.exports = {
 			secure: false, //- Can be either true or false. Only use true if ssl is enabled!
 		  },
 	],
-	embedColor: "#ffeac8", //- Color of the embeds, hex supported
+	embedColor: "#b72d30", //- Color of the embeds, hex supported
 	presence: {
 		// PresenceData object | https://discord.js.org/#/docs/main/stable/typedef/PresenceData
 		status: "online", //- You can have online, idle, dnd and invisible (Note: invisible makes people think the bot is offline)
