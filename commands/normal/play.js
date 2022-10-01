@@ -14,7 +14,7 @@ module.exports = {
         let channel = await client.getChannel(client, message);
         if (!channel) return;
 
-       let player;
+       let player = client.createPlayer(message.channel, channel);
 		if (client.manager) {
 			player = client.createPlayer(interaction.channel, channel);
 		} else {
@@ -36,7 +36,7 @@ module.exports = {
                 ]
             })
         }
-        let player = client.createPlayer(message.channel, channel);
+        
         if (!message.member.voice.channel) {
             const joinEmbed = new MessageEmbed()
                 .setColor(client.config.embedColor)
