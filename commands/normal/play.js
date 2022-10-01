@@ -16,9 +16,9 @@ module.exports = {
 
        let player = client.createPlayer(message.channel, channel);
 		if (client.manager) {
-			player = client.createPlayer(interaction.channel, channel);
+			player = client.createPlayer(message.channel, channel);
 		} else {
-			return interaction.reply({
+			return message.reply({
 				embeds: [
 					new MessageEmbed()
 						.setColor("RED")
