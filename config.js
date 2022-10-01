@@ -18,14 +18,32 @@ module.exports = {
   // The default one should work fine.
   nodes: [
     {
-      identifier: "Fallback", //- Used for indentifier in stats commands.
-      host: "in02.xynnea.ml",
+      identifier: "Main", //- Used for indentifier in stats commands.
+      host: "140.238.226.251",
       port: 3000,
       password: "lavaserver",
       retryAmount: 9999999, //- The amount of times to retry connecting to the node if connection got dropped.
       retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
       secure: false, //- Can be either true or false. Only use true if ssl is enabled!
-    }
+    },
+     {
+			identifier: "Main 2", //- Used for indentifier in stats commands.
+			host: "192.95.42.70",
+			port: 25582,
+			password: "lavaserver",
+			retryAmount: 9999999, //- The amount of times to retry connecting to the node if connection got dropped.
+			retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
+			secure: false, //- Can be either true or false. Only use true if ssl is enabled!
+		  },
+		  {
+			identifier: "Fallback", //- Used for indentifier in stats commands.
+			host: "140.238.248.156",
+			port: 3000,
+			password: "kdlavalink",
+			retryAmount: 9999999, //- The amount of times to retry connecting to the node if connection got dropped.
+			retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
+			secure: false, //- Can be either true or false. Only use true if ssl is enabled!
+		  },
   ],
   embedColor: "#b72d30", //Color of the embeds, hex supported
   presence: {
