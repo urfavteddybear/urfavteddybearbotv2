@@ -17,8 +17,6 @@ module.exports = {
   // Lavalink server; optional public lavalink -> https://lavalink-list.darrennathanael.com/
   // The default one should work fine.
   nodes: [
-    
-
     {
       identifier: "Fallback", //- Used for indentifier in stats commands.
       host: "176.31.203.21",
