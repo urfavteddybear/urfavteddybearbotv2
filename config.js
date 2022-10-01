@@ -19,8 +19,8 @@ module.exports = {
   nodes: [
     {
       identifier: "Fallback", //- Used for indentifier in stats commands.
-      host: "176.31.203.21",
-      port: 1859,
+      host: "in02.xynnea.ml",
+      port: 3000,
       password: "lavaserver",
       retryAmount: 9999999, //- The amount of times to retry connecting to the node if connection got dropped.
       retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
