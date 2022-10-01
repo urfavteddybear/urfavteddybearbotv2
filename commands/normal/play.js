@@ -14,12 +14,19 @@ module.exports = {
         let channel = await client.getChannel(client, message);
         if (!channel) return;
 
-        let node = await client.getLavalink(client);
-        if (!node) {
-            return message.reply({
-                embeds: [client.ErrorEmbed("Lavalink node is not connected")],
-            });
-        }
+       let player;
+		if (client.manager) {
+			player = client.createPlayer(interaction.channel, channel);
+		} else {
+			return interaction.reply({
+				embeds: [
+					new MessageEmbed()
+						.setColor("RED")
+						.setDescription("Lavalink node is not connected"),
+				],
+			});
+		}
+        
         let query = args.join(" ");
         if (!query) {
             return message.reply({
